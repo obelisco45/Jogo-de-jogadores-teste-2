@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
-<script src="./p5.play.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
-<script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+      //Your web app's Firebase configuration
       var firebaseConfig = {
-    apiKey: "AIzaSyCTJWp2hSr550dEZLnNRfvlrLYS1NPC_Eo",
-    authDomain: "jogo-carro-76cd2.firebaseapp.com",
-    databaseURL: "https://jogo-carro-76cd2-default-rtdb.firebaseio.com",
-    projectId: "jogo-carro-76cd2",
-    storageBucket: "jogo-carro-76cd2.appspot.com",
-    messagingSenderId: "922682342896",
-    appId: "1:922682342896:web:e9c499a973a3a1266e7135"
-  };
+        apiKey: "AIzaSyCQSvZTLJeMBVG4y5pNb9DiyQ_1a5ccc8k",
+        authDomain: "car-multiplayr.firebaseapp.com",
+        databaseURL: "https://car-multiplayr-default-rtdb.firebaseio.com",
+        projectId: "car-multiplayr",
+        storageBucket: "car-multiplayr.appspot.com",
+        messagingSenderId: "726926836476",
+        appId: "1:726926836476:web:3e3f126820017757b9cd79",
+        measurementId: "G-7CFYSS56JN"
+     };
 
+      // // Initialize Firebase
+      // firebase.initializeApp(firebaseConfig);
 
-    // Initialize Firebase 
+    // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+    </script>
 
-</script>
-  <script src="js/player.js"></script> 
-  <script src="js/form.js"></script>
-  <script src="js/game.js"></script>
-
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-      <script src="sketch.js"></script>
+    <script src="sketch.js"></script>
   </body>
 </html>
